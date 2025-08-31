@@ -31,7 +31,7 @@ await \_emailService.SendEmailAsync(
 fromAddress: "[sender@domain.com](mailto:sender@domain.com)",
 toAddress: "[recipient@domain.com](mailto:recipient@domain.com)",
 subject: "Welcome to Lillie's Toy Box!",
-body: "<h1>Thank you for signing up!</h1>",
+body: "Thank you for signing up!",  ** Can accept HTML input here. 
 user: "[ccuser@domain.com](mailto:ccuser@domain.com)"
 );
 
@@ -49,7 +49,7 @@ await \_emailService.SendMailToManyWithAttachmentsAsync(
 fromAddress: "[sender@domain.com](mailto:sender@domain.com)",
 toAddresses: new\[] { "[user1@domain.com](mailto:user1@domain.com)", "[user2@domain.com](mailto:user2@domain.com)" },
 subject: "Monthly Report",
-htmlBody: "<p>Attached is your monthly report.</p>",
+htmlBody: "Attached is your monthly report.",
 ccAddresses: new\[] { "[manager@domain.com](mailto:manager@domain.com)" },
 attachments: attachments
 );
